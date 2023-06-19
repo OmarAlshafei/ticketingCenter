@@ -5,7 +5,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "leak_detector_c.h"
 
 #define TOTAL_LINES 12
 #define NAME_MAX 15
@@ -178,7 +177,6 @@ void customerCheckout(int nCustomers){
 }
 //The main function reads the number of test cases and the number of customers, and then calls the customerCheckout function
 int main(){
-  atexit(report_mem_leak);
   
   int testCases, nCustomers;
   
