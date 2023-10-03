@@ -189,7 +189,7 @@ int main(){
       if (nCustomers>500000)
         exit(1);//If nCustomers is over 500000 the program will exit
         
-		  customerCheckout(nCustomers);//Calls customerCheckout function
-	  }
+      customerCheckout(nCustomers);//Calls customerCheckout function
+    }
   return 0;
 }
